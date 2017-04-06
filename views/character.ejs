@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body style="background-color:gray">
+<h1><%= title %></h1>
+<div style="float:left; padding-left: 25px; padding-right: 25px; background-color:ghostwhite; border-style: double; height:500px; width:300px;">
+    <p>Character: <%= name %></p>
+    <p>Born: <%= born %></p>
+    <p>Eye Color: <%= eyes %></p>
+    <p>Gender: <%= gender %></p>
+    <p>Hair Color: <%= hair %></p>
+    <p>Height: <%= height %></p>
+    <p>Mass: <%= mass %></p>
+    <p>Skin Color: <%= skin %></p>
+    <p>Homeworld: <%= home %></p>
+    <p>Species: <%= species %></p>
+</div>
+<div style="float:left; padding-left: 25px; padding-right: 25px; background-color:ghostwhite; border-style: double; height:500px; width:300px;">
+    <p>Starships:
+    <ul>
+        <% starships.forEach(function(ship) { %>
+        <li>Ship ID: <%= ship %></li>
+        <% }); %>
+    </ul>
+    </p>
+    <p>Vehicles:
+    <ul>
+        <% vehicles.forEach(function(vehicle) { %>
+        <li>Vehicle ID: <%= vehicle %></li>
+        <% }); %>
+    </ul>
+    </p>
+</div>
+<div style="float:left; padding-left: 25px; padding-right: 25px; background-color:ghostwhite; border-style: double; height:500px; width:300px;">
+    <p>Films:
+        <ul>
+            <% films.forEach(function(film) { %>
+            <li>Film ID: <%= film %></li>
+            <% }); %>
+        </ul>
+    </p>
+    <p>URL: <%= url %></p>
+    <p>Created: <%= created %></p>
+    <p>Edited: <%= edited %></p>
+</div>
+
+
+</body>
+</html>
